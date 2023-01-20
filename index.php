@@ -18,20 +18,7 @@
   <strong>Headers</strong>
   <ul>
     <?php
-      .messagebox {
-        position:fixed;
-        background-color:#000000;
-        color:#ffffff;
-        border:3px solid #ffffff;
-        font-family:'Voltaire', sans-serif;
-        font-size:24px;
-        width:180px;
-        border-radius:15px;
-        z-index:1;
-        padding:10px;
-        }
-        
-      foreach (getallheaders() as $name => $value) {
+          foreach (getallheaders() as $name => $value) {
         echo "<li><strong>$name</strong><span>: $value</span></li>";
       }
     ?>
